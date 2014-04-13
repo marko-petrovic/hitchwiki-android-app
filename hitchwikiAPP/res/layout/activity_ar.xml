@@ -1,0 +1,93 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_relative_view_on_ar" >
+
+    <com.dualquo.te.hitchwiki.extended.LinearLayoutMarkerDetailsMenu
+        android:id="@+id/markerDescriptionLayoutAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ScrollView  
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center">
+            
+            <TextView
+	            android:id="@+id/placeDescriptionAR"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="5dp" />
+            
+        </ScrollView>
+    </com.dualquo.te.hitchwiki.extended.LinearLayoutMarkerDetailsMenu>
+    
+    <RelativeLayout 
+            android:id="@+id/rellayout_placeButtonNavigateAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/markerDescriptionLayoutAR"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginRight="10dp">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <com.dualquo.te.hitchwiki.extended.ExtendedButtonToFadeInAndOut 
+            android:id="@+id/placeButtonCommentsAR"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/button_background"/>  
+	        
+            <com.dualquo.te.hitchwiki.extended.ExtendedButtonToFadeInAndOut 
+            android:id="@+id/placeButtonNavigateAR"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_background"/> 
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ar_openMAPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/map_button" />
+    
+    <Button
+        android:id="@+id/ar_radiusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp" />
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>
+
+</FrameLayout>

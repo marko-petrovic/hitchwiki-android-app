@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="metaioSDKSignature">xmo8X76eE9rAeR7pklJvHh/D/ViP+pDD6acuPMo6NMA=</string>
+    <string name="app_name">Hitchwiki for Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="dialog_zum_title">Quit Hitchwiki app?</string>
+    <string name="dialog_zum_red_button_text">Yes, quit</string>
+    <string name="dialog_zum_back_button_text">No, stay</string>
+    
+    <string name="dialog_comments_title">Comments added by hitchhikers</string>
+    
+    <string name="point_number_x">Point #%1$s</string>
+    
+    <string name="options_menu_refresh_description">Synchronize Hitchwiki markers data to be sure your local database is up to date. Bellow is a date of the last sync</string>
+    <string name="options_menu_maptype_description">Change type of Google map that Hitchwiki app uses. Note that Satellite maps require more data bandwidth than other map types</string>
+	<string name="options_menu_maptype_none">DEFAULT MAP USED</string>
+	<string name="options_menu_maptype_satellite">SATELLITE MAP USED</string>
+	<string name="options_menu_maptype_terrain">TERRAIN MAP USED</string>
+	<string name="options_menu_maptype_none_crouton">Map set to DEFAULT mode</string>
+	<string name="options_menu_maptype_satellite_crouton">Map set to SATELLITE mode</string>
+	<string name="options_menu_maptype_terrain_crouton">Map set to TERRAIN mode</string>
+    <string name="options_menu_refresh_date_unknown">UNKNOWN DATE</string>
+    <string name="options_menu_title">HITCHWIKI MAP AND MARKERS OPTIONS</string> 
+    <string name="options_menu_mapzoom_description">This is max. allowed distance between your POV and map ground. Lower distance provides better performance of markers, but smaller area on the map is shown. You have to restart the app for this settings to be in effect.</string>
+    <string name="options_menu_mapzoom_levelset_high">distance is HIGH</string>
+    <string name="options_menu_mapzoom_levelset_medium">distance is MEDIUM</string>
+    <string name="options_menu_mapzoom_levelset_low">distance is LOW</string>
+    <string name="options_menu_mapzoom_levelset_high_crouton">Distance between your POV and map ground will be set to HIGH on next app start</string>
+    <string name="options_menu_mapzoom_levelset_medium_crouton">Distance between your POV and map ground will be set to MEDIUM on next app start</string>
+    <string name="options_menu_mapzoom_levelset_low_crouton">Distance between your POV and map ground will be set to LOW on next app start</string>
+    
+    <string name="message_gps_turning_on">GPS is turning on</string>
+    <string name="message_markers_synced_to_total_number_of">Total number of </string>
+    <string name="message_markers_refreshed_to_total_number_of">Markers are synchronized with Hitchwiki! Total number of </string>
+    <string name="message_no_gps">Navigation and Augmented Reality mode are disabled. To enable, turn on GPS.</string>
+    
+    <string name="button_navigate_to_this_place">NAVIGATE TO THIS PLACE</string>
+    <string name="button_comments">COMMENTS</string>
+    
+</resources>
