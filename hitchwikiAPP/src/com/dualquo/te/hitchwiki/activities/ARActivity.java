@@ -89,7 +89,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
     //dialog for showing comments
     RelativeLayout commentsLayout;
     
-  //adapter for listView with comments from particular marker
+    //adapter for listView with comments from particular marker
     private CommentsListViewAdapter commentsAdapter;
     
     private PlaceInfoComplete placeWithCompleteDetails;
