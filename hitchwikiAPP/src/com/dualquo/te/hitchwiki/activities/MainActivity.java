@@ -121,6 +121,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 @SuppressLint({ "SimpleDateFormat", "DefaultLocale" })
 public class MainActivity extends FragmentActivity implements OnMarkerClickListener, OnCameraChangeListener, ProcessingListener
 {
+	//get maps key prior to publishing on google play at this link
 	//https://developers.google.com/maps/documentation/android/start#the_google_maps_api_key
 	protected final static int CHOICE_APP_LEAVE = 117; 
 	protected final static int NAVIGATE_TO_LONG_CLICKED_POINT = 202;
