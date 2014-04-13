@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.metaio.sdk"
+    android:versionCode="1"
+    android:versionName="4.5.2">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="14" />
+
+    <application android:label="metaioSDK">
+
+    </application>
+
+</manifest>

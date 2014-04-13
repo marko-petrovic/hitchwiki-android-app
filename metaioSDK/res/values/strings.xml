@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button label for accepting terms of conditions -->
+    <string name="BTN_ACCEPT">Accept</string>
+    <!-- Title for button add model in model-detail view -->
+    <string name="BTN_ADD">Add</string>
+    <!-- Button for adding a channel to favorites -->
+    <string name="BTN_ADD_FAVORITE">Add to Favorites</string>
+    <!-- Button text to agree terms of service and privacy policy -->
+    <string name="BTN_AGREE_TERMS">I agree to the Terms of Service and Privacy Policy</string>
+    <!-- Segment control -->
+    <string name="BTN_ALL">All</string>
+    <!-- Button to apply channel filters -->
+    <string name="BTN_APPLY">Apply</string>
+    <!-- Text for back button. -->
+    <string name="BTN_BACK">Back</string>
+    <!-- Button to open information to buy a product -->
+    <string name="BTN_BUY">Buy</string>
+    <!-- Button to dial a phone number -->
+    <string name="BTN_CALL">Call</string>
+    <!-- Cancel button text -->
+    <string name="BTN_CANCEL">Cancel</string>
+    <!-- Button to close a dialog -->
+    <string name="BTN_CLOSE">Close</string>
+    <!-- Button to delete an item such as POI -->
+    <string name="BTN_DELETE">Delete</string>
+    <!-- Button to send an email -->
+    <string name="BTN_EMAIL">Email</string>
+    <!-- Button label for exiting the application -->
+    <string name="BTN_EXIT">Exit</string>
+    <!-- Button to open junaio feedback information -->
+    <string name="BTN_FEEDBACK">Feedback</string>
+    <!-- Button label for filtering channel contents -->
+    <string name="BTN_FILTER">Filter</string>
+    <!-- Button to open additional information, e.g. by scanning a barcode -->
+    <string name="BTN_GET_INFORMATION">Get information</string>
+    <!-- Button label for Getting Started on Home screen -->
+    <string name="BTN_GETTING_STARTED">Getting started</string>
+    <!-- Go button in the Live, List and Map views, and to launch channels from the list -->
+    <string name="BTN_GO">Go</string>
+    <!-- Button to hide a pop-up message permenantly -->
+    <string name="BTN_HIDE">Hide</string>
+    <!-- Button label for Home -->
+    <string name="BTN_HOME">Home</string>
+    <!-- Button to open information -->
+    <string name="BTN_INFO">Info</string>
+    <!-- Button to sort latest channels -->
+    <string name="BTN_LATEST">Latest</string>
+    <!-- Button to open license information -->
+    <string name="BTN_LICENSE">License</string>
+    <!-- List view button -->
+    <string name="BTN_LIST">List</string>
+    <!-- Live view button -->
+    <string name="BTN_LIVE">Live</string>
+    <!-- LLA Marker button -->
+    <string name="BTN_LLAMARKER">Detect</string>
+    <!-- Button to a load 3D model -->
+    <string name="BTN_LOAD_3D">Load 3D</string>
+    <!-- Login button label -->
+    <string name="BTN_LOGIN">Login</string>
+    <!-- Logout button label -->
+    <string name="BTN_LOGOUT">Logout</string>
+    <!-- Button text for managing the channel -->
+    <string name="BTN_MANAGE_CHANNEL">Manage this channel</string>
+    <!-- Map Button -->
+    <string name="BTN_MAP">Map</string>
+    <!-- Button to sort channels based on most relevant -->
+    <string name="BTN_MOST_RELEVANT">Most Relevant</string>
+    <!-- Button label for my junaio on Home screen -->
+    <string name="BTN_MY_JUNAIO">My junaio</string>
+    <!-- Button for sorting channels -->
+    <string name="BTN_NEW">New</string>
+    <!-- No button text -->
+    <string name="BTN_NO">No</string>
+    <!-- Button no thanks -->
+    <string name="BTN_NO_THANKS">No Thanks</string>
+    <!-- OK button -->
+    <string name="BTN_OK">OK</string>
+    <!-- Button to open a channel, perhaps we should use BTN_OPEN_CHANNEL -->
+    <string name="BTN_OPEN">Open</string>
+    <!-- Button for opening the channel in Live, List or Map view -->
+    <string name="BTN_OPEN_CHANNEL">Open the Channel</string>
+    <!-- Button to open a web site -->
+    <string name="BTN_OPEN_WEB">Open Web</string>
+    <!-- Button for playing an audio -->
+    <string name="BTN_PLAY_AUDIO">Play Audio</string>
+    <!-- Button to play media contents -->
+    <string name="BTN_PLAY_MEDIA">Play</string>
+    <!-- Button for playing a video -->
+    <string name="BTN_PLAY_VIDEO">Play Video</string>
+    <!-- Button for sorting channels based on popularity -->
+    <string name="BTN_POPULAR">Popular</string>
+    <!-- Button label for Post -->
+    <string name="BTN_POST">Post</string>
+    <!-- Button to rate the application -->
+    <string name="BTN_RATE_IT">Rate it!</string>
+    <!-- Button label for refusing terms of conditions -->
+    <string name="BTN_REFUSE">Refuse</string>
+    <!-- Remember login information -->
+    <string name="BTN_REMEBMER_LOGIN">Keep me logged in</string>
+    <!-- Button for removing a channel from favorites -->
+    <string name="BTN_REMOVE_FAVORITE">Remove from Favorites</string>
+    <!-- Title for remove friend action -->
+    <string name="BTN_REMOVE_FRIEND">Remove from Friends</string>
+    <!-- Button to retry an operation -->
+    <string name="BTN_RETRY">Retry</string>
+    <!-- Button to display route information -->
+    <string name="BTN_ROUTE">Route</string>
+    <!-- Text for Save button . I think in the Configure My Channels section... -->
+    <string name="BTN_SAVE">Save</string>
+    <!-- Button to save the screenshot on the device -->
+    <string name="BTN_SAVE_SCREENSHOT">Save screenshot</string>
+    <!-- Scan button in the Live view -->
+    <string name="BTN_SCAN">Scan</string>
+    <!-- Button to open application settings -->
+    <string name="BTN_SETTINGS">Settings</string>
+    <!-- Button to the share the contents on Facebook -->
+    <string name="BTN_SHARE_FACEBOOK">Share on Facebook</string>
+    <!-- Button to share contents, e.g. Facebook -->
+    <string name="BTN_SHARING">Sharing</string>
+    <!-- Button to show the password characters -->
+    <string name="BTN_SHOW_PASSWORD">Show Password</string>
+    <!-- Signup button -->
+    <string name="BTN_SIGN_UP">Sign Up</string>
+    <!-- Text on the button that will bring you to the signup/login screen -->
+    <string name="BTN_SIGNUP_LOGIN">Sign up/Login</string>
+    <!-- Button text to signup for junaio newsletter -->
+    <string name="BTN_SIGNUP_NEWSLETTER">Signup to junaio newsletter</string>
+    <!-- Button label for my junaio on Home screen -->
+    <string name="BTN_SOCIAL">My Junaio</string>
+    <!-- Button to open junaio support information -->
+    <string name="BTN_SUPPORT">Support</string>
+    <!-- Tag the World -->
+    <string name="BTN_TAG_THE_WORLD">Tag the World</string>
+    <!-- Tag Visibility -->
+    <string name="BTN_TAG_VISIBILITY">Tag Visibility</string>
+    <!-- View button in the live view -->
+    <string name="BTN_VIEW">View</string>
+    <!-- Button to view an image in full screen -->
+    <string name="BTN_VIEW_IMAGE">View Image</string>
+    <!-- Yes button text -->
+    <string name="BTN_YES">Yes</string>
+    <!-- Channel category (Banking) -->
+    <string name="CATEGORY_BANKING">Banking</string>
+    <!-- Channel category (culture) -->
+    <string name="CATEGORY_CULTURE">Culture</string>
+    <!-- Channel category (Favorites) -->
+    <string name="CATEGORY_FAVORITES">Favorites</string>
+    <!-- Channel category (Featured) -->
+    <string name="CATEGORY_FEATURED">Featured</string>
+    <!-- Channel category (Food) -->
+    <string name="CATEGORY_FOOD">Food</string>
+    <!-- Channel category (Friends' channels) -->
+    <string name="CATEGORY_FRIENDS_CHANNEL">My friends\' channels</string>
+    <!-- Channel category (Games) -->
+    <string name="CATEGORY_GAMES">Games</string>
+    <!-- Channel category (History) -->
+    <string name="CATEGORY_HISTORY">History</string>
+    <!-- Channel category (My channels) -->
+    <string name="CATEGORY_MY_CHANNELS">My Channels</string>
+    <!-- Channel category (Nearby) -->
+    <string name="CATEGORY_NEARBY">Nearby</string>
+    <!-- Channel category (News) -->
+    <string name="CATEGORY_NEWS">News</string>
+    <!-- Channel category (Nightlife) -->
+    <string name="CATEGORY_NIGHTLIFE">Nightlife</string>
+    <!-- Channel category (Search) -->
+    <string name="CATEGORY_SEARCH">Search channels</string>
+    <!-- Channel category (Shopping) -->
+    <string name="CATEGORY_SHOPPING">Shopping</string>
+    <!-- Channel category (Travel) -->
+    <string name="CATEGORY_TRAVEL">Travel</string>
+    <!-- Text for channel search text field -->
+    <string name="HNT_CHANNELS_SEARCH">Type in search terms</string>
+    <!-- Textfield hint email address -->
+    <string name="HNT_EMAIL_ADDRESS">Email Address</string>
+    <!-- Text hint for password field -->
+    <string name="HNT_PASSWORD">Password</string>
+    <!-- Text hint Search junaio -->
+    <string name="HNT_SEARCH_JUNAIO">Search junaio</string>
+    <!-- Text for friend search field -->
+    <string name="HNT_SEARCH_USERS">Search by username or email address</string>
+    <!-- Text hint for twitter password field -->
+    <string name="HNT_TWITTER_PASSWORD">Twitter password</string>
+    <!-- Text hint for twitter username field -->
+    <string name="HNT_TWITTER_USERNAME">Twitter username</string>
+    <!-- Text hint Username -->
+    <string name="HNT_USERNAME">Username</string>
+    <!-- Title for about junaio dialog in the home screen -->
+    <string name="LBL_ABOUT_JUNAIO">About junaio</string>
+    <!-- Text for cell to add a comment -->
+    <string name="LBL_ADD_COMMENT">Add a comment</string>
+    <!-- Text for add friends cell, Title for adding friends screen -->
+    <string name="LBL_ADD_FRIENDS">Add friends</string>
+    <!-- Title for adding model viewcontroller -->
+    <string name="LBL_ADD_MODEL">Add model</string>
+    <!-- Application name that is visible with the icon -->
+    <string name="LBL_APPLICATION_NAME">junaio</string>
+    <!-- Subtitle for twitter sharing -->
+    <string name="LBL_AUTOMATICALLY_SHARE_EVENTS">Automatically share events!</string>
+    <!-- Text in the channel detail view. e.g. Lala by Stella -->
+    <string name="LBL_BY">by %s</string>
+    <!-- Channel state active -->
+    <string name="LBL_CHANNEL_STATE_ACTIVE">Active</string>
+    <!-- Channel state -->
+    <string name="LBL_CHANNEL_STATE_INACTIVE">Channel created, waiting for approval!</string>
+    <!-- Title for channels -->
+    <string name="LBL_CHANNELS">Channels</string>
+    <!-- Text indicating how many characters the user can still enter. -->
+    <string name="LBL_CHARACTERS_LEFT_FOR_INPUT">%d characters left.</string>
+    <!-- Label displayed on splash screen that application is checking external storage -->
+    <string name="LBL_CHECK_EXT_STORAGE">Checking external storage&#8230;</string>
+    <!-- Label displayed on splash screen that application is checking internal storage -->
+    <string name="LBL_CHECK_INT_STORAGE">Checking internal storage&#8230;</string>
+    <!-- Label displayed on splash screen that application is checking if junaio server is reachable -->
+    <string name="LBL_CHECK_INTERNET">Checking internet connection&#8230;</string>
+    <!-- Title for comments screen -->
+    <string name="LBL_COMMENTS">Comments</string>
+    <!-- Currently scanning for -->
+    <string name="LBL_CURRENTLY_SCANNING_FOR">Currently scanning for:</string>
+    <!-- Duration string 1 day. -->
+    <string name="LBL_DAY_AGO">%d day ago</string>
+    <!-- Duration string days. -->
+    <string name="LBL_DAYS_AGO">%d days ago</string>
+    <!-- Description-label for manage channel -->
+    <string name="LBL_DESCRIPTION">Description</string>
+    <!-- Title for friend request sent message -->
+    <string name="LBL_DONE">Done</string>
+    <!-- Title for customization edit view [probably not used anymore] -->
+    <string name="LBL_EDIT_MODEL">Edit model</string>
+    <!-- Error -->
+    <string name="LBL_ERROR">Error</string>
+    <!-- Text for featured channels (editors pick) on Home screen -->
+    <string name="LBL_FEATURED_PICKS">Featured Picks</string>
+    <!-- Title for friends overview -->
+    <string name="LBL_FRIENDS">Friends</string>
+    <!-- Text for friendship request cell -->
+    <string name="LBL_FRIENDSHIP_REQUESTS">Friendship requests</string>
+    <!-- Duration string 1 hour. -->
+    <string name="LBL_HOUR_AGO">%d hour ago</string>
+    <!-- Duration string hours. -->
+    <string name="LBL_HOURS_AGO">%d hours ago</string>
+    <!-- Label for Image -->
+    <string name="LBL_IMAGE">Image</string>
+    <!-- Distance string kilometers -->
+    <string name="LBL_KM_AWAY">%i km away</string>
+    <!-- Text for load more contents -->
+    <string name="LBL_LOAD_MORE">Load more&#8230;</string>
+    <!-- Text for loading more contents -->
+    <string name="LBL_LOADING">Loading&#8230;</string>
+    <!-- Title for message -->
+    <string name="LBL_LOGIN_JUNAIO">Login to junaio</string>
+    <!-- Distance string meters -->
+    <string name="LBL_M_AWAY">%i m away</string>
+    <!-- Duration string 1 minute. -->
+    <string name="LBL_MINUTE_AGO">%d minute ago</string>
+    <!-- Duration string minutes. -->
+    <string name="LBL_MINUTES_AGO">%d minutes ago</string>
+    <!-- Label for 3D Model -->
+    <string name="LBL_MODEL">Model</string>
+    <!-- Title for add comment screen -->
+    <string name="LBL_MY_COMMENT">My comment</string>
+    <!-- Name-label for manage channel -->
+    <string name="LBL_NAME">Name</string>
+    <!-- Text to show number of POIs nearby -->
+    <string name="LBL_NEARBY">Nearby</string>
+    <!-- Text for footer when no comments were found -->
+    <string name="LBL_NO_COMMENTS">No comments</string>
+    <!-- Label for Note -->
+    <string name="LBL_NOTE">Note</string>
+    <!-- Text for indicating which Channel's shown in Live view. -->
+    <string name="LBL_NOW_VIEWING">Now viewing&#8230;</string>
+    <!-- Navigation title when posting an image -->
+    <string name="LBL_POST_IMAGE">Post image</string>
+    <!-- Navigation title for posting a message -->
+    <string name="LBL_POST_MESSAGE">Post message</string>
+    <!-- Text that is displayed in the text-field when posting a message or image -->
+    <string name="LBL_POSTING">Posting&#8230;</string>
+    <!-- Private-label for tag visibility (manage channel) -->
+    <string name="LBL_PRIVATE">Private</string>
+    <!-- Title for profile overview -->
+    <string name="LBL_PROFILE">Profile</string>
+    <!-- Channel visibility public -->
+    <string name="LBL_PUBLIC">Public</string>
+    <!-- Currently scanning QRCodes and Barcodes -->
+    <string name="LBL_QRCODES_AND_BARCODES">Barcodes and QRCodes </string>
+    <!-- Rate channel label -->
+    <string name="LBL_RATE">Rate</string>
+    <!-- text for something that happened less than a second ago -->
+    <string name="LBL_RIGHT_NOW">right now</string>
+    <!-- Message when searching for channels -->
+    <string name="LBL_SEARCHING_CHANNELS">Searching for channels</string>
+    <!-- Message when searching for products -->
+    <string name="LBL_SEARCHING_PRODUCTS">Searching for products</string>
+    <!-- This is less than 1 min -->
+    <string name="LBL_SECONDS_AGO">some seconds ago</string>
+    <!-- Segment control -->
+    <string name="LBL_TAG_IT">Tag it</string>
+    <!-- Twitter label -->
+    <string name="LBL_TWITTER">Twitter</string>
+    <!-- Label for untitled contents such as POIs or Channels -->
+    <string name="LBL_UNTITLED">Untitled</string>
+    <!-- e.g. 10m away or 4yd away. -->
+    <string name="LBL_X_AWAY">%1$i%2$@ away</string>
+    <!-- Menu text to clear application cache -->
+    <string name="MNU_CLEAR_CACHE">Clear Cache</string>
+    <!-- Menu text to clear channel history -->
+    <string name="MNU_CLEAR_HISTORY">Clear History</string>
+    <!-- Menu text to zoom the map view to show all the contents -->
+    <string name="MNU_ZOOM_ALL">All</string>
+    <!-- Menu text to zoom the map view to show the contents near current location only -->
+    <string name="MNU_ZOOM_HERE">Here</string>
+    <!-- Title directions message -->
+    <string name="MSG_TITLE_DIRECTIONS">Directions</string>
+    <!-- Title for 'do you like this app' message -->
+    <string name="MSG_TITLE_LIKE_APP">Like this App?</string>
+    <!-- Title of message when LLA marker was detected -->
+    <string name="MSG_TITLE_LLA_MARKER_DETECTED">LLA marker detected</string>
+    <!-- Title message for dialog when login is failed -->
+    <string name="MSG_TITLE_LOGIN_FAILED">Login failed</string>
+    <!-- Title when no lla marker was detected -->
+    <string name="MSG_TITLE_NO_LLA_MARKERS_DETECTED">No LLA marker detected</string>
+    <!-- Message title that is displayed when memory is unavailable -->
+    <string name="MSG_TITLE_NO_MEMORY">No memory access</string>
+    <!-- Title to display when creating a placed model failed -->
+    <string name="MSG_TITLE_PLACING_MODEL_FAILED">Placing model failed.</string>
+    <!-- Dialog title when searching for channels -->
+    <string name="MSG_TITLE_SEARCHING_CHANNELS">Channels</string>
+    <!-- Title of the message that is displayed when junaio server is unreachable -->
+    <string name="MSG_TITLE_SERVER_UNREACHABLE">junaio server unavailable</string>
+    <!-- Title for sign up error message -->
+    <string name="MSG_TITLE_SIGNUP_ERROR">Sign up error</string>
+    <!-- Title message for dialog when signup is failed -->
+    <string name="MSG_TITLE_SIGNUP_FAILED">Signup failed</string>
+    <!-- Title terms and conditions message -->
+    <string name="MSG_TITLE_TERMS_CONDITIONS">Terms and conditions</string>
+    <!-- Terms of service (web view title) -->
+    <string name="MSG_TITLE_TERMS_SERVICE">Terms of Service</string>
+    <!-- Title for message when no friends were found -->
+    <string name="MSG_TITLE_USERS_NOT_FOUND">No users found</string>
+    <!-- Message title that is displayed when user inputs invalid data into the text field -->
+    <string name="MSG_TITLE_VALIDATION_ERROR">Validation error</string>
+    <!-- Title for warning messages -->
+    <string name="MSG_TITLE_WARNING">Warning</string>
+    <!-- Error message that is displayed when user attempted to signup without accepting terms of service -->
+    <string name="MSGE_ACCEPT_TERMS">You have to accept the terms and conditions in order to sign up.</string>
+    <!-- Message to display when creating a placed model failed -->
+    <string name="MSGE_ADDING_PLACEDMODEL">Content addition failed. Please verify the URL.</string>
+    <!-- Alertview text when deleting a poi failed -->
+    <string name="MSGE_DELETE_POI">Deleting point of interest failed.</string>
+    <!-- Please enter at least %i characters -->
+    <string name="MSGE_ENTER_ATLEAST_CHARS">Please enter at least %i characters</string>
+    <!-- Error message. New text: Removing friend failed. -->
+    <string name="MSGE_FRIEND_REMOVED">Removing friend failed.</string>
+    <!-- Error when accepting/ignoring a friend-request -->
+    <string name="MSGE_FRIENDSHIP">Friendship approval failed.</string>
+    <!-- Error message when requesting friendship call failed -->
+    <string name="MSGE_FRIENDSHIP_REQUEST">Friendship request failed. This can happen if you already requested this friendship.</string>
+    <!-- Error message that is displayed if channel history is not cleared -->
+    <string name="MSGE_HISTORY_NOT_CLEARED">Error clearing channels\' history</string>
+    <!-- Error message when junaio server returns 500, i.e. internal server error -->
+    <string name="MSGE_INTERNAL_SERVER">Internal Server Error</string>
+    <!-- Error message when user entered invalid email address -->
+    <string name="MSGE_INVALID_EMAIL_ENTERED">Please enter a valid email address.</string>
+    <!-- Message when a POI contains invalid email address -->
+    <string name="MSGE_INVALID_EMAIL_OPENED">Invalid email address</string>
+    <!-- Invalid password for an external service e.g. twitter -->
+    <string name="MSGE_INVALID_PASSWORD">Please type in a valid password.</string>
+    <!-- Message when a POI contains invalid phone number -->
+    <string name="MSGE_INVALID_PHONE_NUMBER">Invalid phone number</string>
+    <!-- Message when invalid URL is opened in the custom web view -->
+    <string name="MSGE_INVALID_URL">Invalid URL</string>
+    <!-- Invalid username for an external service e.g. twitter -->
+    <string name="MSGE_INVALID_USERNAME">Please type in a valid username.</string>
+    <!-- Message when no lla marker was detected -->
+    <string name="MSGE_LLA_MARKER_DETECTED">Detection of LLA marker failed. Please try again.</string>
+    <!-- Message if the twitter feed search failed -->
+    <string name="MSGE_LOAD_TWITTER">Loading Twitter feed failed.</string>
+    <!-- Message text that is displayed when login failed -->
+    <string name="MSGE_LOGIN">Login failed. Please verify your username and password.</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGE_NETWORK">Network error</string>
+    <!-- Error message when user did not entered an email address -->
+    <string name="MSGE_NO_EMAIL">Sorry, but you forgot the email address.</string>
+    <!-- Error message that is displayed when external memory is unavailable for writing cached files -->
+    <string name="MSGE_NO_EXTERNAL_MEMORY">Please make sure that SD card is available on the phone and the phone is not connected to the USB cable.</string>
+    <!-- Message when the device does not have Google Maps Navigation installed that is required for POIs' route feature -->
+    <string name="MSGE_NO_GOOGLE_MAPS_NAV">Please install Google Maps Navigation to use this feature</string>
+    <!-- Error message that is displayed when internal memory is unavailable for writing application data -->
+    <string name="MSGE_NO_INTERNAL_MEMORY">Not enough internal phone memory available. Please free the memory by uninstalling the applications or clearing the application caches</string>
+    <!-- Error message when junaio server is not reachable, i.e. no internet connection -->
+    <string name="MSGE_NO_INTERNET">No Internet Connection</string>
+    <!-- Message that the current device does not support optical tracking -->
+    <string name="MSGE_NO_OPTICAL_TRACKING">This device does not support optical tracking</string>
+    <!-- Message that is appended if the resource such as external storage is not available -->
+    <string name="MSGE_NOT_AVAILABLE">not available</string>
+    <!-- Error message when application is unable to play audio stream -->
+    <string name="MSGE_PLAYING_AUDIO">Error playing audio stream</string>
+    <!-- Error  message for image posting screen -->
+    <string name="MSGE_POST_IMAGE">Posting of image failed.</string>
+    <!-- Error message for posting a new message -->
+    <string name="MSGE_POST_MESSAGE">Posting of message failed.</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGE_PUBLISH_COMMENT">Publishing of comment failed.</string>
+    <!-- Server error -->
+    <string name="MSGE_SERVER">Server Error</string>
+    <!-- Message that is displayed when signup failed. -->
+    <string name="MSGE_SIGNUP">Sign up failed. Username or email address already exists.</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGE_SUBSCRIBE_CHANNEL">Channel subscription failed.</string>
+    <!-- Error message when server took too long to response -->
+    <string name="MSGE_TIMEOUT">Request Timeout</string>
+    <!-- Please try again later -->
+    <string name="MSGE_TRY_AGAIN">There has been a server error. Please try again later.</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGE_TWITTER_LOGIN">Login to Twitter failed. Please verify your login data.</string>
+    <!-- Error message when junaio server returns 401, 403 or 404, i.e. user is not authorized to access the information -->
+    <string name="MSGE_UNAUTHORIZED_ACCESS">Unauthorized Access</string>
+    <!-- Generic message for all kinds of network errors -->
+    <string name="MSGE_UNKNOWN_NETWORK">Unknown network error</string>
+    <!-- Failed to update channel -->
+    <string name="MSGE_UPDATE_CHANNEL">Channel update failed.</string>
+    <!-- Error message that is displayed when password length is short -->
+    <string name="MSGE_VERIFY_PASSWORD">Please verify that your password is at least 5 characters long.</string>
+    <!-- Error message that is displayed when username length is short or too long -->
+    <string name="MSGE_VERIFY_USERNAME">Please verify that your username is between 3 and 32 characters.</string>
+    <!-- Message that is appended if the resource such as external storage is available -->
+    <string name="MSGI_AVAILABLE">available</string>
+    <!-- Message that is displayed when application cache is succesfully cleared -->
+    <string name="MSGI_CACHE_CLEARED">Cache cleared</string>
+    <!-- Message that is displayed when no channels are found based on search -->
+    <string name="MSGI_CHANNELS_NOT_FOUND">No channels found!</string>
+    <!-- Downloading message -->
+    <string name="MSGI_DOWNLOADING">Downloading %s &#8230;</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGI_DOWNLOADING_EXTERNAL_MODEL">Downloading external model</string>
+    <!-- Message for sent friend request -->
+    <string name="MSGI_FRIEND_REQUEST_SENT">Friendship request has been sent.</string>
+    <!-- Message that application is waiting for initial location by the GPS -->
+    <string name="MSGI_GPS_WAITING">Waiting for GPS</string>
+    <!-- Message that is displayed when channels history is succesfully cleared -->
+    <string name="MSGI_HISTORY_CLEARED">Channels\' history cleared</string>
+    <!-- Message that is displayed when channels history list is empty -->
+    <string name="MSGI_HISTORY_EMPTY">History is empty!</string>
+    <!-- Message for 'do you like this app' message -->
+    <string name="MSGI_LIKEAPP_MSG">Please rate it in the App Store</string>
+    <!-- Message for LLA-marker detected message box -->
+    <string name="MSGI_LLA_MARKER_DETECTED">GPS can be inaccurate, especially inside buildings. junaio will use the precise position determined by this LLA marker for 1 minute. Then it will switch back to GPS.</string>
+    <!-- Message in the loading bar while loading POIs -->
+    <string name="MSGI_LOADING_POIS">Loading points of interest&#8230;</string>
+    <!-- Message that is displayed while the data for a twitter feed is loaded, followed by the twitter username -->
+    <string name="MSGI_LOADING_TWITTER_FEED_FOR">Loading twitter feed for %s &#8230;</string>
+    <!-- Message if no twitter feed results were found -->
+    <string name="MSGI_NO_CURRENT_TWEETS">No current tweets</string>
+    <!-- Message that iPhone 3G is not supported -->
+    <string name="MSGI_HW_NOT_SUPPORTED">Unfortunately this device does not have the necessary hardware to run junaio.</string>
+    <!-- No Search results -->
+    <string name="MSGI_NO_MATCHES">No Matches</string>
+    <!-- Message when no results are found after visual search -->
+    <string name="MSGI_NO_RESULTS">Search failed. Please try again.</string>
+    <!-- Message that is displayed in my junaio when the user is not logged in -->
+    <string name="MSGI_NOT_LOGGED_IN">You are not logged in. To access all the features, please sign up to junaio.</string>
+    <!-- No POIs found -->
+    <string name="MSGI_POIS_NOT_FOUND">No nearby points of interest found!</string>
+    <!-- Title for sending a friend request -->
+    <string name="MSGI_SEND_FRIENDREQUEST_TO">Send friendship request to %s</string>
+    <!-- Message on splash screen that junaio is starting -->
+    <string name="MSGI_STARTING_JUNAIO">Starting junaio&#8230;</string>
+    <!-- Message when application is syncing models with the server -->
+    <string name="MSGI_SYNCING_MODELS">Syncing models</string>
+    <!-- Thank you message -->
+    <string name="MSGI_THANK_YOU">Thank you</string>
+    <!-- Message when no users were found in the friend search -->
+    <string name="MSGI_USERS_NOT_FOUND">No users found, please adjust keywords and try again!</string>
+    <!-- Text if customization was not filled in correctly -->
+    <string name="MSGQ_FILL_IN">Please fill in \n %s.</string>
+    <!-- Message logout from junaio -->
+    <string name="MSGQ_LOGOUT">Do you want to logout?</string>
+    <!-- No comment provided by engineer. -->
+    <string name="MSGQ_REMOVE_FRIEND">Do you want to remove \'%s\' from Friends?</string>
+    <!-- Message that is displayed before user can confirm an important task such as deleting or logging out -->
+    <string name="MSGQ_WANT_TO_CONTINUE">Are you sure you want to continue?</string>
+    <!-- Warning message displayed in the Live view if the accelerometer sensor is unavailable -->
+    <string name="MSGW_ACCELEROMETER_UNAVAILABLE">Accelerometer sensor is not available</string>
+    <!-- Warning message displayed when the device is from the black list -->
+    <string name="MSGW_BLACK_LIST">Unfortunately junaio is not compatible with your phone. For any questions or feedback, please contact us directly.</string>
+    <!-- Warning message displayed in the Live view if the camera is unavailable -->
+    <string name="MSGW_CAMERA_UNAVAILABLE">Camera not available</string>
+    <!-- Warning message displayed in the Live view if the GPS or location sensor is unavailable -->
+    <string name="MSGW_GPS_UNAVAILABLE">GPS is not available</string>
+    <!-- Message that IOS4 is required -->
+    <string name="MSGW_IOS4_REQUIRED">iOS4 is required for optical tracking</string>
+    <!-- Warning message on iPhone 3G -->
+    <string name="MSGW_IPHONE_3GS_REQUIRED">Compass required</string>
+    <!-- Title for message to be displayed when starting with an iPhone 3G message -->
+    <string name="MSGW_LIVEVIEW_ONLY_3GS">The live-view functionality needs a device with compass.</string>
+    <!-- Warning message that is displayed when user's current location cannot be determined -->
+    <string name="MSGW_LOCATION_UNAVAILABLE">Current location is not available, please enable GPS in the settings</string>
+    <!-- Message when LocationService is deactivated -->
+    <string name="MSGW_LOCATIONSERVICE_NEEDED">Location services needed</string>
+    <!-- Warning message displayed when the device is not from the white list -->
+    <string name="MSGW_NOT_WHITE_LIST">You are running junaio on an untested device. For any questions or technical problems, please contact us directly.</string>
+    <!-- Warning message that junaio will be closed and an external application will run -->
+    <string name="MSGW_OPEN_EXTERNAL_APP">This will close junaio and open an external application.</string>
+    <!-- Warning message displayed in the Live view if the orientation/compass sensor is unavailable -->
+    <string name="MSGW_ORIENTATION_UNAVAILABLE">Orientation sensor is not available</string>
+    <!-- Message that is displayed when junaio server is unreachable -->
+    <string name="MSGW_SERVER_UNREACHABLE">Unfortunately we could not connect to the junaio server. Please try again later.</string>
+    <!-- Some Android Devices do not support Barcode Scanning (Warning Message Title) -->
+    <string name="MSG_TITLE_BARCODE_UNSUPPORTED">Barcode scanning not supported</string>
+    <!-- Some Android Devices do not support Barcode Scanning (Warning Message Content) -->
+    <string name="MSGW_BARCODE_UNSUPPORTED">Your device does not support barcode scanning, please upgrade to Android 2.2 or above! For any questions, please contact us directly.</string>
+    <!-- Button to close help text -->
+    <string name="BTN_CLOSE_HELPTXT">Close</string>
+    <!-- Help text to explain Search bar on Home screen -->
+    <string name="LBL_HELPTXT_SEARCHBAR_HOMESCREEN">Search for channels by name or keywords</string>
+    <!-- Help text to explain Near Me on Home screen -->
+    <string name="LBL_HELPTXT_NEARME_HOMESCREEN">Explore location based channels around you</string>
+    <!-- Help text to explain SCAN on Home screen -->
+    <string name="LBL_HELPTXT_SCAN_HOMESCREEN">Search junaio by scanning barcodes, QR codes and images</string>
+    <!-- Help text to explain Featured Picks on Home screen -->
+    <string name="LBL_HELPTXT_FEATUREDPICKS_HOMESCREEN">Recommended channels in your region</string>
+    <!-- "Help text to explain ""GO"" Button in SCAN View" -->
+    <string name="LBL_HELPTEXT_BTN_GO_SCANVIEW">Use the GO Tab to navigate in junaio</string>
+    <!-- Help text to explain SCAN window in SCAN view (area to scan barcodes/Qr codes) -->
+    <string name="LBL_HELPTEXT_SCANWINDOW_SCANVIEW">Position barcodes and QR codes for automatic detection and tab link for more info</string>
+    <!-- "Help text to explain Button ""Search for channels"" in SCAN View" -->
+    <string name="LBL_HELPTEXT_BTN_SEARCHJUNAIO_SCANVIEW">Take a picture and browse for related Augmented Reality content in junaio</string>
+    <!-- Button to search junaio by taking a picture (visual search) of ad/image/product/etc. -->
+    <string name="BTN_SEARCH_JUNAIO">Search for channels</string>
+    <!-- Button on poi details to open Google Navigation -->
+    <string name="BTN_NAVIGATE">Navigation</string>
+</resources>

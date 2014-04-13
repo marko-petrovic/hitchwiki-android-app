@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<stroke 
+		android:width="2dip" 
+		android:color="@color/toastBorder" />
+		
+	<solid android:color="@color/toastBackground"/>
+	<padding 
+		android:left="20dip" 
+		android:top="2dip"
+		android:right="20dip" 
+		android:bottom="2dip" />
+	<corners android:radius="5dip" />
+</shape>
