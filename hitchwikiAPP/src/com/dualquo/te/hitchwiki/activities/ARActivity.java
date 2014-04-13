@@ -107,7 +107,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		super.onCreate(savedInstanceState);
 		
 		//test
-		System.out.println("ARActivity in onCreate");
+		System.out.println("ARActivity in onCreate...");
 		
 		// turn on wakelock
 //		PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
