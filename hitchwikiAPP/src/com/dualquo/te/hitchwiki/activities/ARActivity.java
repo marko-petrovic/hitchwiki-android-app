@@ -2,7 +2,6 @@ package com.dualquo.te.hitchwiki.activities;
 
 import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.Collections;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -70,8 +69,8 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 	//this will switch to true after the first locListener action:
     public boolean locationAvailable = false;
     
-    //aprx. 1700 meters - 0.015f
-  	public double radius = 0.035;
+    //aprx. 680 meters is 0.0060
+  	public double radius = 0.0060;
     
 	private IGeometry tempIGeometryPlace;
 	
@@ -100,7 +99,20 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
     private int radiusView = 1;
     
     private ProgressBar progressBar;
+    
+    //screen dimensions in pixels
+    private int screenWidth, screenHeight;
+    
+    //height of marker in pixels
+    //as all markers are the same height (by now), one is enough to hold the value for the whole AR activity
+    //will be populated in createBillboard, but only once, therefore we also need boolean
+    private boolean heightOfTokenDetermined = false;
+    private int heightOfToken;
+    
+    //factor that multiplies radius of radar 
+    public static int factor = 1;
     	
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
 	{
@@ -108,6 +120,11 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		
 		//test
 		System.out.println("ARActivity in onCreate...");
+		
+		//get screen sizes, they will be used for scaling markers
+		Display display = getWindowManager().getDefaultDisplay();
+		screenWidth = display.getWidth();
+		screenHeight = display.getHeight();
 		
 		// turn on wakelock
 //		PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
@@ -119,6 +136,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		boolean result = metaioSDK.setTrackingConfiguration("GPS");
 		MetaioDebug.log("Tracking data loaded: " + result); 
 		
+		//not needed as we have custom scaling formula
 		metaioSDK.setLLAObjectRenderingLimits(5, 2000);
 		
 		//fonts:
@@ -317,7 +335,8 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 			{ 
 					for (int index = 0; index < MainActivity.placesContainer.size(); index++)
 					{
-						if(isPointInCircle
+						//we will load only markers that are in maximum range, and that is triple radius distance
+						if(Utils.isPointInCircle
 								(
 										MainActivity.location.getLatitude(),
 										MainActivity.location.getLongitude(),
@@ -352,13 +371,12 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 						}
 					}
 			
-				
-				
 				if(placesAsGeometries.size() != 0 && placesAsGeometries != null)
 				{
 					arePlacesAsGeometriesCreated = true;
 				}
 				
+				//test println
 				System.out.println("size of placesAsGeometries " + placesAsGeometries.size());
 			}
 			
@@ -366,7 +384,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 			
 			//setup radar
 			mRadar = metaioSDK.createRadar();
-			mRadar.setScale(1.2f);
+//			mRadar.setScale(1.2f);
 			mRadar.setBackgroundTexture(AssetsManager.getAssetPath("metaio/radar.png"));
 			mRadar.setObjectsDefaultTexture(AssetsManager.getAssetPath("metaio/yellow.png"));
 			mRadar.setRelativeToScreen(IGeometry.ANCHOR_TL);
@@ -412,7 +430,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 			@Override
 			public void run()
 			{
-				int factor = 1;
+				factor = 1;
 				
 				if(previousRadiusViewFinal == 1)
 				{
@@ -422,6 +440,16 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 				{
 					factor = 3;
 				}
+				
+				runOnUiThread(new Runnable()
+				{
+					@Override
+					public void run()
+					{
+						//inform user what's selected radius
+						Toast.makeText(context, "Radar radius is " + factor * Utils.radiusToMeters(radius) + " meters", Toast.LENGTH_LONG).show();
+					}
+				});
 				
 				//reset radar
 				if (mRadar.getSize() != 0)
@@ -527,29 +555,49 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		scaleGeometries(location);
 	}
 	
+	//idea is to use more or less correct optical formula for scaling markers in given scaling range
+	//closest markers will be half the screen big, and markers outside of the scaling range will be scaled to minValue
 	private void scaleGeometries(LLACoordinate location)
 	{
 		if(arePlacesAsGeometriesCreated)
 		{
-			ArrayList<Double> distances = new ArrayList<Double>();
+			//lets say this is ratio of the closest marker and markers at scaling range distance and further away
+			double minValue = 0.1;
+			double maxValue = 2;
+			double scale = 0;
+			minValue = minValue * screenHeight/2;
+			maxValue = maxValue * screenHeight/2;
 			
-			for (int i = 0; i < placesAsGeometries.size(); i++)
-			{
-				distances.add(placesAsGeometries.get(i).getTranslationLLA().distanceTo(location));
-			}
-			
-			//now distances has all distances between self location and all placesAsGeometries, lets sort that ascending
-			Collections.sort(distances);
-
-			//now compare first and last distance from distances to get ratio value
-			double scaleDistance = distances.get(distances.size()-1) - distances.get(0);
-			double closestMarkerDistance = distances.get(0);
-			
+			//for every marker that is going to be scaled, get distance to it and proceed
 			for (int index = 0; index < placesAsGeometries.size(); index++)
 			{	
 				double particularDistance = placesAsGeometries.get(index).getTranslationLLA().distanceTo(location);
 				
-				placesAsGeometries.get(index).setScale(2.0f * Float.parseFloat(Double.toString(closestMarkerDistance/particularDistance)));
+				scale = Utils.getMax
+						(
+							minValue,
+							Utils.getMin(maxValue, (maxValue * Utils.radiusToMeters(radius*factor))/(particularDistance*10))
+						);
+				
+				if (scale < minValue)
+				{
+					scale = minValue;
+				}
+				
+				if (scale > screenHeight/2)
+				{
+					scale = screenHeight/2;
+				}
+				
+				if (particularDistance < 10)
+				{
+					scale = maxValue;
+				}
+				
+				scale = scale / heightOfToken;
+				
+				//setting scale to token loaded in metaioSDK
+				placesAsGeometries.get(index).setScale((float)scale*4);
 			}
 		}
 	}
@@ -561,7 +609,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		
 			for (int index = 0; index < MainActivity.placesContainer.size(); index++)
 			{
-				if(isPointInCircle
+				if(Utils.isPointInCircle
 						(
 								MainActivity.location.getLatitude(),
 								MainActivity.location.getLongitude(),
@@ -610,30 +658,6 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 			mRadar.add(placesAsGeometries.get(j));
 //				placesAsGeometries.get(j).setLLALimitsEnabled(true);
 		}
-	}
-	
-	
-	//testing if markers are within range:
-	boolean isInRectangle(double centerX, double centerY, double radius, double x, double y) 
-	{
-		return x >= centerX - radius && x <= centerX + radius
-				&& y >= centerY - radius && y <= centerY + radius;
-	}
-
-	// test if coordinate (x, y) is within a radius from coordinate (centerX, centerY)
-	public boolean isPointInCircle(double centerX, double centerY, double radius, double x, double y) 
-	{
-		if (isInRectangle(centerX, centerY, radius, x, y)) 
-		{
-			double dx = centerX - x;
-			double dy = centerY - y;
-			dx *= dx;
-			dy *= dy;
-			double distanceSquared = dx + dy;
-			double radiusSquared = radius * radius;
-			return distanceSquared <= radiusSquared;
-		}
-		return false;
 	}	
 	
 	//billboardTitle could be ID of a marker
@@ -685,9 +709,15 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
                   {
                 	  FileOutputStream out = new FileOutputStream(texturepath);
                       billboard.compress(Bitmap.CompressFormat.PNG, 90, out);
-                      MetaioDebug.log("Texture file is saved to "+texturepath);
-                      return texturepath;
                       
+                      //if heightOfToken value is empty (first occurrence of being here), take it
+                      if(!heightOfTokenDetermined)
+                      {
+                    	  heightOfToken = billboard.getHeight();
+                    	  heightOfTokenDetermined = true;
+                      }
+                      
+                      return texturepath;
                   } 
                   catch (Exception e) 
                   {
@@ -758,7 +788,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 				}
 				else
 				{
-					placeDescription.setText(placeWithCompleteDetails.getDescriptionENdescription());
+					placeDescription.setText(Utils.stringBeautifier(placeWithCompleteDetails.getDescriptionENdescription()));
 				}
 				
 				//button listeners

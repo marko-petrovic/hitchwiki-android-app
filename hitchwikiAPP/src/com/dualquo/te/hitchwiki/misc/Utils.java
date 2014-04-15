@@ -21,6 +21,29 @@ public class Utils
 		return ((radius/0.015) * 1700); 
 	}
 	
+	//testing if markers are within range:
+	public static boolean isInRectangle(double centerX, double centerY, double radius, double x, double y) 
+	{
+		return x >= centerX - radius && x <= centerX + radius
+				&& y >= centerY - radius && y <= centerY + radius;
+	}
+
+	// test if coordinate (x, y) is within a radius from coordinate (centerX, centerY)
+	public static boolean isPointInCircle(double centerX, double centerY, double radius, double x, double y) 
+	{
+		if (isInRectangle(centerX, centerY, radius, x, y)) 
+		{
+			double dx = centerX - x;
+			double dy = centerY - y;
+			dx *= dx;
+			dy *= dy;
+			double distanceSquared = dx + dy;
+			double radiusSquared = radius * radius;
+			return distanceSquared <= radiusSquared;
+		}
+		return false;
+	}
+	
 	//calculation of distance between two gps points using Haversine formula
 	//http://en.wikipedia.org/wiki/Haversine_formula
 	@SuppressLint("UseValueOf")
@@ -107,5 +130,24 @@ public class Utils
 		return stringToGetCorrected;
 	}
 	
+	//comparing values
+	public static double getMax(double a, double b)
+	{
+	    if (a > b) 
+	    {
+	        return a;
+	    }
+	    return b;
+	}
+	
+	//comparing values
+	public static double getMin(double a, double b)
+	{
+	    if (a < b) 
+	    {
+	        return a;
+	    }
+	    return b;
+	}
 	
 }

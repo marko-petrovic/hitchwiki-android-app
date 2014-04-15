@@ -17,4 +17,5 @@ public class Constants
 	public static final float ZOOM_HIGH = 7f;
 	public static final float ZOOM_MEDIUM = 8f;
 	public static final float ZOOM_LOW = 9f;
+	public static final int SCALING_RANGE = 300;
 }
