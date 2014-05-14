@@ -483,6 +483,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		
 		MetaioDebug.log("Geometry selected: "+geometry);
 		System.out.println("Geometry touched: " + geometry.getName());
+		System.out.println("DISTANCE: " + geometry.getTranslationLLA().distanceTo(mSensors.getLocation()));
 		
 		mSurfaceView.queueEvent(new Runnable()
 		{
@@ -562,8 +563,8 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 		if(arePlacesAsGeometriesCreated)
 		{
 			//lets say this is ratio of the closest marker and markers at scaling range distance and further away
-			double minValue = 0.1;
-			double maxValue = 2;
+			double minValue = 0.07;
+			double maxValue = 1.85;
 			double scale = 0;
 			minValue = minValue * screenHeight/2;
 			maxValue = maxValue * screenHeight/2;
@@ -576,7 +577,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 				scale = Utils.getMax
 						(
 							minValue,
-							Utils.getMin(maxValue, (maxValue * Utils.radiusToMeters(radius*factor))/(particularDistance*10))
+							Utils.getMin(maxValue, (maxValue * Utils.radiusToMeters(radius*factor))/(particularDistance*50))
 						);
 				
 				if (scale < minValue)
@@ -597,7 +598,7 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 				scale = scale / heightOfToken;
 				
 				//setting scale to token loaded in metaioSDK
-				placesAsGeometries.get(index).setScale((float)scale*4);
+				placesAsGeometries.get(index).setScale((float)scale*2);
 			}
 		}
 	}
