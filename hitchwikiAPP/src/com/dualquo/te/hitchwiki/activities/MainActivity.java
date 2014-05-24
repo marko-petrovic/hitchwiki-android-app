@@ -156,7 +156,7 @@ public class MainActivity extends FragmentActivity implements OnMarkerClickListe
     public boolean locationAvailable = false;
     
     //self location
-    public static Location location;
+    public static Location location = null;
     
     //boolean that tells AR if there's GPS or not
     public boolean gpsIsEnabled = false;
@@ -332,21 +332,29 @@ public class MainActivity extends FragmentActivity implements OnMarkerClickListe
         	{
 				if(googleMap != null)
 				{
-					if(googleMap.getCameraPosition().zoom < 9.0f)
+					
+					if(location != null)
 					{
-						googleMap.animateCamera
-						(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 
-								15),
-								1000, 
-								null);
+						if(googleMap.getCameraPosition().zoom < 9.0f)
+						{
+							googleMap.animateCamera
+							(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 
+									15),
+									1000, 
+									null);
+						}
+						else
+						{
+							googleMap.animateCamera
+							(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 
+									googleMap.getCameraPosition().zoom),
+									1000, 
+									null);
+						}
 					}
 					else
 					{
-						googleMap.animateCamera
-						(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 
-								googleMap.getCameraPosition().zoom),
-								1000, 
-								null);
+						Toast.makeText(context, "Your location is still unknown. Check if you enabled GPS.", Toast.LENGTH_LONG).show();
 					}
 				}
         	}

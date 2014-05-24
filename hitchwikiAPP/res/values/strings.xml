@@ -2,7 +2,7 @@
 <resources>
 
     <string name="metaioSDKSignature">xmo8X76eE9rAeR7pklJvHh/D/ViP+pDD6acuPMo6NMA=</string>
-    <string name="app_name">Hitchwiki for Android</string>
+    <string name="app_name">Hitchwiki Maps</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="dialog_zum_title">Quit Hitchwiki app?</string>
